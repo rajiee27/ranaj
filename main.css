@@ -1,0 +1,137 @@
+html{ background-color: #233F4D
+}
+
+
+h1 {color: white;
+  font-family: Garamond;
+  text-align: center;
+  font-size: 60px;
+  border-style: hidden;
+  margin-top: 70px;
+  margin-right: 150px;
+  margin-left: 80px;
+
+
+}
+p{color: white;
+  font-family: Garamond;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  margin-right: 150px;
+  margin-left: 100px;
+  
+}
+h2 {color: white;
+  font-family: Garamond;
+  text-align: center;
+  font-size: 50px;
+  border-style: hidden;
+  margin-top: 20px;
+  margin-right: 150px;
+  margin-left: 80px;
+
+}
+h4 {
+  color: white;
+  font-family: Garamond;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-right: 150px;
+  margin-left: 100px;
+  padding-top: 1px;
+  padding-bottom: 2px;
+}
+a
+{ text-decoration: none;
+  color: white;
+  font-family: Garamond;
+
+
+ }
+
+ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    border-style: hidden;
+    margin-top: 50px;
+    margin-right: 150px;
+    margin-left: 80px;
+
+}
+li {
+    display: inline;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+#images {
+    text-align: center;
+    margin: 100px auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+
+#fishImgContainer {
+  background: white;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-bottom: 50px;
+  padding-right: 50px;
+}
+
+input[type= text]{
+  width: 500px; height: 150px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+} 
+input[type= texts] {
+  width: 500px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+ input[type= number]{
+  width: 500px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+ }
+ input[type= email]{
+  width: 500px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+
+ }
+ input {
+  text-align: center;
+ }
+
+ .form-container {
+  width: 500px;
+  display: inline-block; margin-left: 100px;
+  
+  
+ }
+ input[type=submit]{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 230px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+
+ }
+
+
