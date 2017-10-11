@@ -1,10 +1,115 @@
 <!DOCTYPE html>
 <html>
-<link rel = "stylesheet"
-   type = "text/css"
-   href = "main.css"/>
+
 <head>
 	<title>Contact</title>
+	<style>
+	   
+       #map {
+        height: 400px;
+        width: 100%;
+        margin-top: 50px;
+        margin-right: 0px;
+       }
+       .box{
+       	display: flex;
+       }
+       a
+        { text-decoration: none;
+          color: black;
+          font-family: Garamond;
+
+
+         }
+
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    border-style: hidden;
+    margin-top: 50px;
+    margin-right: 150px;
+    margin-left: 80px;
+
+}
+li {
+    display: inline;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+input[type= text]{
+  width: 500px; height: 150px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+} 
+input[type= texts] {
+  width: 500px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+ input[type= number]{
+  width: 500px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+ }
+ input[type= email]{
+  width: 500px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+
+ }
+ input {
+  text-align: center;
+ }
+
+ .form-container {
+  width: 500px;
+  display: inline-block; margin-left: 100px;
+  
+  
+ }
+ input[type=submit]{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 230px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+
+ }
+ h2 {color: black;
+  font-family: Garamond;
+  text-align: center;
+  font-size: 50px;
+  border-style: hidden;
+  margin-top: 20px;
+  margin-right: 150px;
+  margin-left: 80px;
+}
+h4 {
+  color: black;
+  font-family: Garamond;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-right: 150px;
+  margin-left: 100px;
+  padding-top: 1px;
+  padding-bottom: 2px;
+}
+    </style>
+
+
+
+
 </head>
 <body>
 <div id="list">
@@ -18,8 +123,27 @@
 </ul>
 </div>
 
+<div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnHyR5AH11yGww-f7W-8CKaSh6tVJqru8&callback=initMap">
+    </script>
+
 <h2>Contact</h2>
 <h4> We love to hear from you</h4>
+<div class="box">
 
 	<form action="mailto:rajatmohammed@yahoo.com" method="post" enctype="text/plain">
 			<div class="form-container">
@@ -32,9 +156,25 @@
 				Message:<br>
 				<input type="text" name="Message"> <br>
 				<input type="Submit" name="Submit">
-				<!-- <input type="Reset" name="Reset"> -->
 			</div>
 		</form>
+<div class="address">
+    <b>Nice to Hear you</b><br>
+    It nice to finally hear from you, please call us or visit us if you have any questions of complaint<br>
+	<h5>Contact Information</h5><br>
+	<b>Business Hours</b><br>
+	We are opened everyday from 8am-5pm<br>
+	<b>Address</b><br>
+	Km 25 Lagos-Epe Expressway<br>
+	Sangotedo, Lagos State<br>
+	<b>Phone Number</b><br>
+	08035110970<br>
+	<b>Email</b><br>
+	ranajfrozenfoods@gmail.com
+
+</div>
+</div>
+
 
 </body>
 </html>
