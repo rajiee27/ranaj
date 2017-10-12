@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 html{ background-color: #233F4D
 }
 
 
 h1 {color: white;
-  font-family: Garamond;
+  font-family: Open Sans;
   text-align: center;
   font-size: 60px;
   border-style: hidden;
@@ -14,7 +16,7 @@ h1 {color: white;
 
 }
 p{color: white;
-  font-family: Garamond;
+  font-family: Open Sans;
   text-align: center;
   margin-top: 10px;
   margin-bottom: 30px;
@@ -23,7 +25,7 @@ p{color: white;
   
 }
 h2 {color: white;
-  font-family: Garamond;
+  font-family: Open Sans;
   text-align: center;
   font-size: 50px;
   border-style: hidden;
@@ -34,7 +36,7 @@ h2 {color: white;
 }
 h4 {
   color: white;
-  font-family: Garamond;
+  font-family: Open Sans;
   margin-top: 10px;
   margin-bottom: 20px;
   margin-right: 150px;
@@ -45,7 +47,7 @@ h4 {
 a
 { text-decoration: none;
   color: white;
-  font-family: Garamond;
+  font-family: Open Sans;
 
 
  }
@@ -91,7 +93,7 @@ li {
 
  address {
     color: white;
-    font-family: Garamond;
+    font-family: Open Sans;
     margin-left: 1000px;
     display: inline-block;
 
