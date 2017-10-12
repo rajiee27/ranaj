@@ -4,6 +4,12 @@
 <head>
 	<title>Contact</title>
 	<style>
+
+	@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+	body {
+		font-family: 'Open Sans';
+	}
 	   
        #map {
         height: 400px;
@@ -17,9 +23,7 @@
        a
         { text-decoration: none;
           color: black;
-          font-family: Garamond;
-
-
+       
          }
 
     ul {
@@ -47,13 +51,19 @@ input[type= text]{
   margin: 8px 0;
   box-sizing: border-box;
 } 
+textarea{
+  width: 500px; height: 150px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+} 
 input[type= texts] {
   width: 500px;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
 }
- input[type= number]{
+ input[type= tel]{
   width: 500px;
   padding: 12px 20px;
   margin: 8px 0;
@@ -65,9 +75,6 @@ input[type= texts] {
   margin: 8px 0;
   box-sizing: border-box;
 
- }
- input {
-  text-align: center;
  }
 
  .form-container {
@@ -87,7 +94,6 @@ input[type= texts] {
 
  }
  h2 {color: black;
-  font-family: Garamond;
   text-align: center;
   font-size: 50px;
   border-style: hidden;
@@ -97,7 +103,6 @@ input[type= texts] {
 }
 h4 {
   color: black;
-  font-family: Garamond;
   margin-top: 10px;
   margin-bottom: 20px;
   margin-right: 150px;
@@ -105,7 +110,12 @@ h4 {
   padding-top: 1px;
   padding-bottom: 2px;
 }
+.address{
+	padding: 5px 50px;
+}
+
     </style>
+
 
 
 
@@ -126,9 +136,9 @@ h4 {
 <div id="map"></div>
     <script>
       function initMap() {
-        var uluru = {lat: -25.363, lng: 131.044};
+        var uluru = {lat: 6.473875, lng: 3.624692};
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
+          zoom: 12,
           center: uluru
         });
         var marker = new google.maps.Marker({
@@ -142,7 +152,7 @@ h4 {
     </script>
 
 <h2>Contact</h2>
-<h4> We love to hear from you</h4>
+
 <div class="box">
 
 	<form action="mailto:rajatmohammed@yahoo.com" method="post" enctype="text/plain">
@@ -150,11 +160,11 @@ h4 {
 				Full name:<br>
 				<input type="texts" name="fullname"><br>
 				Phone number:<br>
-				<input type="number" name="phonenumber"> <br>
+				<input type="tel" name="phonenumber"> <br>
 				Email:<br>
 				<input type="email" name="email"> <br>
 				Message:<br>
-				<input type="text" name="Message"> <br>
+				<textarea name="Message" rows="12"></textarea> <br>
 				<input type="Submit" name="Submit">
 			</div>
 		</form>
